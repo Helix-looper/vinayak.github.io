@@ -1,0 +1,141 @@
+/* body formatting for every page */
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+/* body color*/
+.body-bg {
+  background-color: #e2e9e1;
+}
+
+/* font */
+.fon {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* card property for cards */
+.card-prop {
+  max-height: 350px;
+  object-fit: contain;
+  background-color: #fafbfd;
+}
+
+/* logo setting for header */
+.header-logo {
+  width: 200px;
+  height: 55px;
+}
+
+/* login icon formatting */
+.header-login {
+  height: 45px;
+}
+
+/* hover setting for login icon */
+.header-login:hover {
+  filter: brightness(0.6) hue-rotate(120deg);
+}
+
+/* index page cover image formatting */
+.index-cover-img {
+  height: 93vh;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 0%;
+  filter: brightness(65%);
+}
+
+/* cover image container setting */
+.cover-cont {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* cover image logo formatting */
+.cover-logo {
+  position: absolute;
+}
+
+/* hover setting for cover image logo */
+.cover-logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(8px 6px 30px black);
+}
+
+/* cart icon color */
+.fa-cart-shopping {
+  color: white;
+}
+
+/* cart icon hover setting */
+.fa-cart-shopping:hover {
+  filter: brightness(0.6) hue-rotate(120deg);
+}
+
+/* card title formatting */
+.card-title {
+  font-weight: bold;
+}
+
+/* table data formatting */
+.table td:last-child {
+  text-align: right;
+}
+
+/* footer color */
+.footer-clr {
+  text-decoration: none;
+  color: white;
+}
+
+/* card button color */
+.btn-clr {
+  background-color: #0D302C !important;
+}
+
+/* media query for large devices */
+@media (max-width: 300px) {
+  .cover-logo {
+    width: 200px;
+  }
+
+  .header-logo {
+    width: auto;
+    margin: 10px 0px;
+    height: 45px;
+  }
+
+  .form-cls {
+    margin: 0px 10px;
+  }
+}
+
+/* media query for medium devices */
+@media (min-width: 300px) {
+  .cover-logo {
+    width: 300px;
+  }
+
+  .form-cls {
+    margin: 0px 10px;
+  }
+}
+
+/* media query for small devices */
+@media (min-width: 600px) {
+  .cover-logo {
+    width: 500px;
+  }
+
+  .form-cls {
+    margin: 0px 10px;
+  }
+}

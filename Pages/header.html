@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+
+  <body class="w-100">
+    <!-- upper section of header -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <!-- toggle button -->
+      <button
+        style="background-color: white"
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- logo -->
+      <a class="navbar-brand ms-3" ref="index.html"
+        ><img
+          class="header-logo"
+          src="../Images/logo-removebg-preview.png"
+          alt="logo"
+      /></a>
+      <!-- search bar -->
+      <form class="d-flex ms-md-3 input-group form-cls" role="search">
+        <input
+          type="search"
+          class="form-control"
+          name="search"
+          id="head-search"
+          placeholder="Trending clothes..."
+        />
+        <button type="submit" class="btn btn-outline-success fon">Search</button>
+      </form>
+
+      <ul
+        class="navbar-nav navbar-collapse collapse align-items-md-center ms-auto mb-lg-0 me-4"
+        id="navbarNav"
+      >
+        <li class="nav-item me-3">
+          <!-- login button -->
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="../Pages/login.html"
+            ><img
+              class="header-login"
+              src="https://img.icons8.com/laces/64/FFFFFF/user.png"
+              alt="login"
+          /></a>
+        </li>
+        <li class="nav-item">
+          <!-- cart button -->
+          <a class="nav-link" href="../Pages/cart.html"
+            ><i class="fa-solid fs-3 fa-cart-shopping"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- bottom section of button -->
+    <nav
+      style="background-color: #ced4cd !important"
+      class="navbar collapse navbar-collapse d-lg-flex navbar-expand bg-body-tertiary"
+      id="navbarNav"
+    >
+      <div class="container-fluid d-flex justify-content-center">
+        <div id="navbarCont">
+          <ul class="navbar-nav flex-wrap w-100">
+            <!-- home -->
+            <li class="nav-item">
+              <a class="nav-link fon" aria-current="page" href="../Pages/index.html"
+                >Home</a
+              >
+            </li>
+
+            <!-- all product -->
+            <li class="nav-item">
+              <a class="nav-link fon" href="../Pages/product.html">All Products</a>
+            </li>
+            <!-- Women section -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle fon"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-target="#drop-menu"
+                aria-expanded="false"
+                aria-controls="drop-menu"
+              >
+                Women
+              </a>
+              <ul class="list-unstyled dropdown-menu collapse" id="drop-menu">
+                <li>
+                  <a class="dropdown-item fon" href="../Pages/women.html"
+                    >All Categories</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fon" href="../Pages/women-dress.html"
+                    >Dresses</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fon" href="../Pages/women-pant.html"
+                    >Pants</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fon" href="../Pages/women-skirt.html"
+                    >Skirts</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- men section -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle fon"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Men
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item fon" href="../Pages/men.html"
+                    >All Categories</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fon" href="../Pages/men-hoodie.html"
+                    >Hoodies</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fon" href="../Pages/men-trouser.html"
+                    >Trousers</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fon" href="../Pages/men-shirt.html"
+                    >Shirts</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- kid section -->
+            <li class="nav-item">
+              <a class="nav-link fon" href="../Pages/kids.html">Kids</a>
+            </li>
+            <!-- contact -->
+            <li class="nav-item">
+              <a class="nav-link fon" href="../Pages/contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
